@@ -1,13 +1,20 @@
 # WampServer Recipes
 
-Collection of useful WampServer recipes.
+Collection of useful [WampServer](http://www.wampserver.com/) recipes. (Note: this project is not affiliated with WampServer in any way.)
 
 
-## PHP versions ##
+## Recipes
 
- - [PHP 5.3](./php-5.3/)
+ - Additional PHP versions:
+     - [PHP 5.3](./php-5.3/)
+ - Additional tools:
+     - [Adminer](./adminer/)
 
 
-## Tools
+## How to contribute
 
- - [Adminer](./adminer/)
+ 1. Fork the repository
+ 2. Create a new folder for your recipe
+ 3. Add the main `README.md` there and also possibly some other useful files like sample configurations etc. 
+ 4. Add a link to your recipe to this main `README.md`
+ 5. Send a pull request.
