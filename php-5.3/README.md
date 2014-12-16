@@ -12,6 +12,7 @@
  4. Copy the file `wampserver.conf` from `php5.5.12` to `php5.3.29`
  5. Copy the sample [php.ini](./php.ini) from this recipe to your `php5.3.29` folder
      - Optionally edit the `date.timezone` option to match your preference
+     - See [the diff](https://github.com/borekb/wampserver-recipes/commit/017022239b333b4cf4fb37e5148f6cf31a3f8219) between this working version and the standard `php.ini-development` from which it was created
  6. Copy the `php.ini` to `phpForApache.ini`
  7. Run WampServer
  8. Click the tray icon > *PHP* > *Version* > *5.3.29*
@@ -34,65 +35,8 @@ First copy the `php.ini-development` to `php.ini` and then replace:
 `mysql.default_port =` => `mysql.default_port = 3306`
 `;session.save_path = "/tmp"` => `session.save_path = "C:/wamp/tmp"`
 
-Then Replace the whole block between
+Then replace the whole extensions block with what is provided in the sample [ini.php](./ini.php).
 
-    ; Be sure to appropriately set the extension_dir directive.
-
-and
-
-    ;;;;;;;;;;;;;;;;;;;
-    ; Module Settings ;
-    
-with:
-
-    ; Be sure to appropriately set the extension_dir directive.
-    ;
-    extension=php_bz2.dll
-    ;extension=php_curl.dll
-    extension=php_fileinfo.dll
-    extension=php_gd2.dll
-    extension=php_gettext.dll
-    ;extension=php_gmp.dll
-    ;extension=php_intl.dll
-    ;extension=php_imap.dll
-    ;extension=php_interbase.dll
-    ;extension=php_ldap.dll
-    extension=php_mbstring.dll
-    extension=php_exif.dll  ; Must be after mbstring as it depends on it
-    extension=php_mysql.dll
-    extension=php_mysqli.dll
-    ;extension=php_oci8.dll  ; Use with Oracle 10gR2 Instant Client
-    ;extension=php_oci8_11g.dll  ; Use with Oracle 11g Instant Client
-    ;extension=php_openssl.dll
-    ;extension=php_pdo_firebird.dll
-    ;extension=php_pdo_mssql.dll
-    extension=php_pdo_mysql.dll
-    ;extension=php_pdo_oci.dll
-    ;extension=php_pdo_odbc.dll
-    ;extension=php_pdo_pgsql.dll
-    extension=php_pdo_sqlite.dll
-    ;extension=php_pgsql.dll
-    ;extension=php_phar.dll
-    ;extension=php_pspell.dll
-    extension=php_shmop.dll
-    
-    ; The MIBS data available in the PHP distribution must be installed. 
-    ; See [www.php.net] 
-    ;extension=php_snmp.dll
-    
-    extension=php_soap.dll
-    extension=php_sockets.dll
-    extension=php_sqlite.dll
-    ;extension=php_sqlite3.dll
-    ;extension=php_sybase_ct.dll
-    ;extension=php_tidy.dll
-    extension=php_xmlrpc.dll
-    extension=php_xsl.dll
-    ;extension=php_zip.dll
-    
-    ;;;;;;;;;;;;;;;;;;;
-    ; Module Settings ;
-    
 
 ## References
 
