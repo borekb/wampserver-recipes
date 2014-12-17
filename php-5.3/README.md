@@ -41,3 +41,4 @@ Then replace the whole extensions block with what is provided in the sample [ini
 ## References
 
  - [Forum post that is often linked to](http://forum.wampserver.com/read.php?1,124128)
+ - [Detailed blog post](http://john-dugan.com/upgrade-php-wamp/) with screenshots, however, this recipe is somewhat shorter and more straightforward
