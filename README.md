@@ -9,6 +9,7 @@ Collection of useful [WampServer](http://www.wampserver.com/) recipes. (Note: th
      - [PHP 5.3](./php-5.3/)
  - Additional tools:
      - [Adminer](./adminer/)
+     - [Updating Xdebug](./xdebug/)
 
 
 ## How to contribute
