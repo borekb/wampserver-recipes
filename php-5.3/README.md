@@ -27,13 +27,13 @@ If the provided `php.ini` doesn't work for you or you want to create it manually
 
 First copy the `php.ini-development` to `php.ini` and then replace:
 
-`;error_log = php_errors.log` => `error_log = C:/wamp/logs/php_error.log`
-`register_argc_argv = Off` => `register_argc_argv = On`
-`; extension_dir = "./"` => `extension_dir = "C:/wamp/bin/php/php5.3.29/ext/"`
-`;upload_tmp_dir =` => `upload_tmp_dir = "C:/wamp/tmp"`
-`;date.timezone =` => your timezone, e.g. `date.timezone = Europe/Paris`
-`mysql.default_port =` => `mysql.default_port = 3306`
-`;session.save_path = "/tmp"` => `session.save_path = "C:/wamp/tmp"`
+`;error_log = php_errors.log` => `error_log = C:/wamp/logs/php_error.log`  
+`register_argc_argv = Off` => `register_argc_argv = On`  
+`; extension_dir = "./"` => `extension_dir = "C:/wamp/bin/php/php5.3.29/ext/"`  
+`;upload_tmp_dir =` => `upload_tmp_dir = "C:/wamp/tmp"`  
+`;date.timezone =` => your timezone, e.g. `date.timezone = Europe/Paris`  
+`mysql.default_port =` => `mysql.default_port = 3306`  
+`;session.save_path = "/tmp"` => `session.save_path = "C:/wamp/tmp"`  
 
 Then replace the whole extensions block with what is provided in the sample [ini.php](./ini.php).
 
